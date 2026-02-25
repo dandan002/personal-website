@@ -4,7 +4,7 @@ export interface Instrument {
   symbol: string;
   name: string;
   price: number;
-  change: number; // % change seed (display only; simulation overrides)
+  change: number; // % change shown before first API response
 }
 
 export interface LiveInstrument extends Instrument {
