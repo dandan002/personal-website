@@ -20,7 +20,7 @@ async function getRepos(): Promise<GithubRepo[]> {
     );
     if (!res.ok) throw new Error("GitHub API error");
     const data: GithubRepo[] = await res.json();
-    return data.filter((r) => !r.fork && r.description).slice(0, 6);
+    return data.filter((r) => !r.fork).slice(0, 3);
   } catch {
     return FALLBACK_PROJECTS as GithubRepo[];
   }

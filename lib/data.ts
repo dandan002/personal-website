@@ -52,24 +52,24 @@ export const SKILLS = {
 
 export const FALLBACK_PROJECTS = [
   {
-    name: "quantum-control",
-    description: "NMR qubit control system and GUI for NV center photonic qubit measurements.",
-    html_url: "https://github.com/dandan002/ECE457",
-    language: "Python",
-    stargazers_count: 0,
-  },
-  {
-    name: "autonomous-car",
-    description: "Autonomous miniature vehicle with Hall effect sensors, camera vision, and facial recognition.",
-    html_url: "https://github.com/dandan002/laser-turret",
-    language: "C++, Python",
-    stargazers_count: 0,
-  },
-  {
-    name: "readme-translator",
-    description: "React + Flask app that translates README files using Gemini and Groq APIs.",
-    html_url: "https://github.com/dandan002/readMe-reader",
+    name: "flight-arbitrage",
+    description: "Flight arbitrage app made with our trusty friend Claude.",
+    html_url: "https://github.com/dandan002/flight-arbitrage",
     language: "TypeScript",
+    stargazers_count: 0,
+  },
+  {
+    name: "readMe-reader",
+    description: "A document reader specialized for foreign-language acquisition. Provides translations and context for intermediate language-learners.",
+    html_url: "https://github.com/dandan002/readMe-reader",
+    language: "JavaScript",
+    stargazers_count: 0,
+  },
+  {
+    name: "hobbyTrading",
+    description: "Algorithmic trading scripts and backtesting tools for personal use.",
+    html_url: "https://github.com/dandan002/hobbyTrading",
+    language: "Python",
     stargazers_count: 0,
   },
 ];
