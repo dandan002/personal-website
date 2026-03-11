@@ -13,10 +13,12 @@ export default function ScrollReveal({ children, stagger = false, delay = 0 }: {
     const el = ref.current;
     if (!el) return;
 
+    let timeoutId: ReturnType<typeof setTimeout>;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add("visible"), delay);
+          timeoutId = setTimeout(() => el.classList.add("visible"), delay);
           observer.unobserve(el);
         }
       },
@@ -24,7 +26,10 @@ export default function ScrollReveal({ children, stagger = false, delay = 0 }: {
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      clearTimeout(timeoutId);
+    };
   }, [delay]);
 
   return (
