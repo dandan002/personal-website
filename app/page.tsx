@@ -15,7 +15,7 @@ interface GithubRepo {
 async function getRepos(): Promise<GithubRepo[]> {
   try {
     const res = await fetch(
-      "https://api.github.com/users/danieljung/repos?sort=updated&per_page=12&type=public",
+      "https://api.github.com/users/dandan002/repos?sort=updated&per_page=12&type=public",
       { next: { revalidate: 3600 } }
     );
     if (!res.ok) throw new Error("GitHub API error");
@@ -342,7 +342,7 @@ export default async function Home() {
               Let&apos;s talk.
             </h2>
             <p style={{ fontSize: "13px", color: "var(--color-muted)", maxWidth: "400px", lineHeight: 1.7, marginBottom: "2.5rem" }}>
-              Open to research collaborations, internships, and interesting projects.
+              Open to research, internships, and interesting projects.
             </p>
 
             <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", marginBottom: "4rem" }}>

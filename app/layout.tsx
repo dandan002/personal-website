@@ -3,10 +3,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Daniel Jung",
-  description: "ECE + Applied Physics student at Princeton. Building at the intersection of hardware and software.",
+  description: "ECE + Applied Physics student at Princeton. Finance + tech.",
   openGraph: {
     title: "Daniel Jung",
-    description: "ECE + Applied Physics student at Princeton.",
+    description: "ECE + Applied Physics student at Princeton. Finance + tech.",
     type: "website",
   },
 };
