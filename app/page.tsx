@@ -171,11 +171,6 @@ export default async function Home() {
                       <div style={{ fontSize: "11px", color: "var(--color-accent)", letterSpacing: "0.05em", marginBottom: "8px" }}>
                         {edu.period}
                       </div>
-                      {edu.details.map((d) => (
-                        <div key={d} style={{ fontSize: "11px", color: "var(--color-muted)", marginBottom: "2px" }}>
-                          — {d}
-                        </div>
-                      ))}
                     </div>
                   </div>
                 ))}
