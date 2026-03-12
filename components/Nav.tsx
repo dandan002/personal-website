@@ -46,6 +46,7 @@ export default function Nav() {
       <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
         <a href="#resume" className="nav-link">Resume</a>
         <a href="#projects" className="nav-link">Projects</a>
+        <a href="#food" className="nav-link">Food</a>
         <a href="#contact" className="nav-link">Contact</a>
       </div>
     </nav>

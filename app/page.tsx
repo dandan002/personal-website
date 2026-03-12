@@ -323,6 +323,52 @@ export default async function Home() {
 
         <hr className="divider" />
 
+        {/* ── Food ── */}
+        <section
+          id="food"
+          style={{ padding: "6rem 0" }}
+        >
+          <ScrollReveal>
+            <p className="section-label">Food</p>
+            <h2
+              style={{
+                fontFamily: "var(--font-display)",
+                fontWeight: 600,
+                fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                marginBottom: "1rem",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Eating my way around.
+            </h2>
+            <p style={{ fontSize: "13px", color: "var(--color-muted)", maxWidth: "480px", lineHeight: 1.7, marginBottom: "2rem" }}>
+              I keep a running list of places I&apos;ve been and want to go — hit me up for recs.
+            </p>
+            <div style={{ display: "flex", gap: "1.25rem", flexWrap: "wrap" }}>
+              <a
+                href="https://maps.app.goo.gl/HnVFL9gccERuvyZH7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+                style={{ fontSize: "13px" }}
+              >
+                Google Maps List
+              </a>
+              <a
+                href="https://beliapp.co/app/itsdaniel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+                style={{ fontSize: "13px" }}
+              >
+                Beli @itsdaniel
+              </a>
+            </div>
+          </ScrollReveal>
+        </section>
+
+        <hr className="divider" />
+
         {/* ── Contact / Footer ── */}
         <section
           id="contact"
