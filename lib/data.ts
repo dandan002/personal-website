@@ -31,7 +31,7 @@ export const EXPERIENCE = [
     desc: "Equity derivatives and FX institutional sales; built internal trading tools and analytics dashboards.",
   },
   {
-    role: "Engineering Intern",
+    role: "Data Intern",
     org: "FERC",
     period: "Jun – Aug 2024",
     desc: "Grid impact analysis; trained neural networks for fault detection.",
