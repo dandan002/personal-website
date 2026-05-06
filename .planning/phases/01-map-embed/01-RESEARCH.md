@@ -347,17 +347,11 @@ Then add `className="map-col"` to the right column div. This is explicit and rel
 
 ---
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **Exact pb= URL for Manhattan zoom 13**
-   - What we know: The URL must be generated from the Google Maps UI; it cannot be hand-constructed.
-   - What's unclear: Whether the UI-generated URL centers on Midtown Manhattan or on a specific point that drifts.
-   - Recommendation: Implementer generates the URL live during the implementation task (Wave 1, Task 1). Include this step explicitly in the plan.
+1. RESOLVED: **Exact pb= URL for Manhattan zoom 13** — handled in 01-01-PLAN.md Task 1 Step 1: implementer generates the URL live from Google Maps UI (Share > Embed a map, search "Manhattan, New York City", zoom ~13) during execution. Cannot be pre-constructed; plan mandates live generation.
 
-2. **Mobile responsive strategy: minWidth vs media query**
-   - What we know: `flexWrap: "wrap"` handles the column collapse. The open question is how to get the right column to fill full width when it wraps.
-   - What's unclear: Whether `minWidth: "min(350px, 100%)"` produces correct behavior across all mobile browsers without testing.
-   - Recommendation: Plan should include a verification step at mobile breakpoint in browser dev tools. If `min()` approach fails, add a single media query to globals.css.
+2. RESOLVED: **Mobile responsive strategy: minWidth vs media query** — plan specifies `minWidth: "min(350px, 100%)"` as the primary approach (consistent with project's zero-media-query convention). If `min()` fails in browser testing, fallback is a single `@media (max-width: 600px)` rule in `globals.css` adding `.map-col { width: 100% !important; }`. Task 2 checkpoint verifies mobile behavior at 375px.
 
 ---
 
