@@ -1,7 +1,8 @@
 ---
 phase: 1
 slug: map-embed
-status: draft
+status: approved
+reviewed_at: 2026-05-06
 shadcn_initialized: false
 preset: none
 created: 2026-05-06
