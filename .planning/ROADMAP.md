@@ -25,11 +25,15 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. The map resizes correctly on mobile, tablet, and desktop without overflow or clipping
   3. The map embed visually fits the dark food section — no jarring white/light UI bleed
   4. The embed loads without requiring any API key or authentication
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Restructure food section with two-column flex layout and Google Maps iframe
+
 **UI hint**: yes
 
 ## Progress
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Map Embed | 0/TBD | Not started | - |
+| 1. Map Embed | 0/1 | Not started | - |
