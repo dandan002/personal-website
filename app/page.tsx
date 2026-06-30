@@ -1,33 +1,8 @@
 import Nav from "@/components/Nav";
 import ScrollReveal from "@/components/ScrollReveal";
-import { PERSONAL, EDUCATION, EXPERIENCE, SKILLS, FALLBACK_PROJECTS } from "@/lib/data";
+import { PERSONAL, EDUCATION, EXPERIENCE, SKILLS, PROJECTS } from "@/lib/data";
 
-interface GithubRepo {
-  name: string;
-  description: string | null;
-  html_url: string;
-  language: string | null;
-  stargazers_count: number;
-  fork: boolean;
-  topics?: string[];
-}
-
-async function getRepos(): Promise<GithubRepo[]> {
-  try {
-    const res = await fetch(
-      "https://api.github.com/users/dandan002/repos?sort=updated&per_page=12&type=public",
-      { next: { revalidate: 3600 } }
-    );
-    if (!res.ok) throw new Error("GitHub API error");
-    const data: GithubRepo[] = await res.json();
-    return data.filter((r) => !r.fork).slice(0, 3);
-  } catch {
-    return FALLBACK_PROJECTS as GithubRepo[];
-  }
-}
-
-export default async function Home() {
-  const repos = await getRepos();
+export default function Home() {
 
   return (
     <>
@@ -259,7 +234,7 @@ export default async function Home() {
                 overflow: "hidden",
               }}
             >
-              {repos.map((repo) => (
+              {PROJECTS.map((repo) => (
                 <a
                   key={repo.name}
                   href={repo.html_url}

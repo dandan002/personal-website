@@ -50,26 +50,26 @@ export const SKILLS = {
   spoken: ["English (Native)", "Korean (TOPIK Level 6)"],
 };
 
-export const FALLBACK_PROJECTS = [
+export const PROJECTS = [
   {
-    name: "flight-arbitrage",
-    description: "Flight arbitrage app made with our trusty friend Claude.",
-    html_url: "https://github.com/dandan002/flight-arbitrage",
-    language: "TypeScript",
-    stargazers_count: 0,
-  },
-  {
-    name: "readMe-reader",
-    description: "A document reader specialized for foreign-language acquisition. Provides translations and context for intermediate language-learners.",
-    html_url: "https://github.com/dandan002/readMe-reader",
+    name: "globetime",
+    description: "A fun UI for time zone calculations. Spin a 3D Earth and figure out if it's too late to Slack Tokyo.",
+    html_url: "https://github.com/dandan002/globetime",
     language: "JavaScript",
     stargazers_count: 0,
   },
   {
-    name: "hobbyTrading",
-    description: "Algorithmic trading scripts and backtesting tools for personal use.",
-    html_url: "https://github.com/dandan002/hobbyTrading",
-    language: "Python",
+    name: "laser-turret",
+    description: "Car that tracks a target, follows up to a point, and points a laser at it. Built for ECE 302 @ Princeton.",
+    html_url: "https://github.com/dandan002/laser-turret",
+    language: "C++",
+    stargazers_count: 0,
+  },
+  {
+    name: "quanta",
+    description: "Vibe-coded fitness tracking app.",
+    html_url: "https://github.com/dandan002/quanta",
+    language: "Swift",
     stargazers_count: 0,
   },
 ];
