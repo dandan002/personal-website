@@ -50,6 +50,17 @@ export const SKILLS = {
   spoken: ["English (Native)", "Korean (TOPIK Level 6)"],
 };
 
+export const INVOLVEMENT = [
+  { org: "Princeton Impact Capital Finance", role: "Chief Investment Officer" },
+  { org: "Tiger Investments", role: "Portfolio Manager" },
+  { org: "Fed Challenge", role: "Labor Researcher" },
+  { org: "James Madison Program", role: "Undergraduate Fellow" },
+  { org: "COS Council", role: "Finance Chair" },
+  { org: "Korean Students' Association", role: "" },
+  { org: "Asian American Student Association", role: "" },
+  { org: "E-Club Forge", role: "" },
+];
+
 export const PROJECTS = [
   {
     name: "globetime",

@@ -1,6 +1,6 @@
 import Nav from "@/components/Nav";
 import ScrollReveal from "@/components/ScrollReveal";
-import { PERSONAL, EDUCATION, EXPERIENCE, SKILLS, PROJECTS } from "@/lib/data";
+import { PERSONAL, EDUCATION, EXPERIENCE, SKILLS, PROJECTS, INVOLVEMENT } from "@/lib/data";
 
 export default function Home() {
 
@@ -292,6 +292,60 @@ export default function Home() {
               >
                 View all on GitHub →
               </a>
+            </div>
+          </ScrollReveal>
+        </section>
+
+        <hr className="divider" />
+
+        {/* ── Campus Involvement ── */}
+        <section
+          id="involvement"
+          style={{ padding: "6rem 0" }}
+        >
+          <ScrollReveal>
+            <p className="section-label">Campus Involvement</p>
+          </ScrollReveal>
+
+          <ScrollReveal stagger delay={100}>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+                gap: "1px",
+                border: "1px solid var(--color-border)",
+                overflow: "hidden",
+              }}
+            >
+              {INVOLVEMENT.map((item) => (
+                <div
+                  key={item.org}
+                  style={{
+                    padding: "1.25rem 1.5rem",
+                    background: "var(--color-surface)",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "4px",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      fontWeight: 600,
+                      fontSize: "13px",
+                      color: "var(--color-text)",
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    {item.org}
+                  </div>
+                  {item.role && (
+                    <div style={{ fontSize: "11px", color: "var(--color-accent)", letterSpacing: "0.04em" }}>
+                      {item.role}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </ScrollReveal>
         </section>
