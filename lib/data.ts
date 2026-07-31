@@ -2,7 +2,7 @@ export const PERSONAL = {
   name: "Daniel Jung",
   title: "ECE + Applied Physics @ Princeton",
   bio: "Doing finance and tech, building on the side.",
-  email: "danieljung@princeton.edu",
+  email: "dandan002@duck.com",
   github: "https://github.com/dandan002",
   linkedin: "https://linkedin.com/in/danieljung010",
   location: "Princeton, NJ",
@@ -19,9 +19,9 @@ export const EDUCATION = [
 
 export const EXPERIENCE = [
   {
-    role: "Undergraduate Researcher",
+    role: "Undergraduate Researcher + Course Assistant",
     org: "Princeton de Leon Lab",
-    period: "Sep 2025 – Present",
+    period: "Sep 2025 – May 2026",
     desc: "Superconductor research on tantalum alloys for improved qubit coherence.",
   },
   {
